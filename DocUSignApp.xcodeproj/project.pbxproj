@@ -12,10 +12,6 @@
 		E02C0525217252A00058E574 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E02C0523217252A00058E574 /* Main.storyboard */; };
 		E02C0527217252A20058E574 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E02C0526217252A20058E574 /* Assets.xcassets */; };
 		E02C052A217252A20058E574 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E02C0528217252A20058E574 /* LaunchScreen.storyboard */; };
-		E02C053C21725BAD0058E574 /* DocuSignSDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = E02C053B21725BAD0058E574 /* DocuSignSDK.bundle */; };
-		E0A08F902172674300D97C73 /* DocuSignSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0A08F8E217266F400D97C73 /* DocuSignSDK.framework */; };
-		E0A08F912172674300D97C73 /* DocuSignSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E0A08F8E217266F400D97C73 /* DocuSignSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		E0A08F9521726A1300D97C73 /* DocuSignSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0A08F9421726A1300D97C73 /* DocuSignSDK.framework */; };
 		E0A08F9E21728D8B00D97C73 /* MainPayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0A08F9D21728D8B00D97C73 /* MainPayViewController.swift */; };
 		E0A08FA22173003F00D97C73 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0A08FA12173003F00D97C73 /* CustomTableViewCell.swift */; };
 		E0A08FA421735DE200D97C73 /* PersonalPayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0A08FA321735DE200D97C73 /* PersonalPayViewController.swift */; };
@@ -28,7 +24,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				E0A08F912172674300D97C73 /* DocuSignSDK.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -46,9 +41,6 @@
 		E02C0529217252A20058E574 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E02C052B217252A20058E574 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E02C053721725B2A0058E574 /* DocuSignSDK-framework */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "DocuSignSDK-framework"; path = "iOS-offline-templates-sdk/DocuSignSDK-framework"; sourceTree = "<group>"; };
-		E02C053B21725BAD0058E574 /* DocuSignSDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = DocuSignSDK.bundle; path = "iOS-offline-templates-sdk/DocuSignSDK-framework/DocuSignSDK.framework/DocuSignSDK.bundle"; sourceTree = "<group>"; };
-		E0A08F8E217266F400D97C73 /* DocuSignSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DocuSignSDK.framework; path = "DocuSignSDK-framework/DocuSignSDK.framework"; sourceTree = "<group>"; };
-		E0A08F9421726A1300D97C73 /* DocuSignSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DocuSignSDK.framework; path = "DocuSignSDK-framework/DocuSignSDK.framework"; sourceTree = "<group>"; };
 		E0A08F9D21728D8B00D97C73 /* MainPayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPayViewController.swift; sourceTree = "<group>"; };
 		E0A08FA12173003F00D97C73 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 		E0A08FA321735DE200D97C73 /* PersonalPayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalPayViewController.swift; sourceTree = "<group>"; };
@@ -59,8 +51,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E0A08F902172674300D97C73 /* DocuSignSDK.framework in Frameworks */,
-				E0A08F9521726A1300D97C73 /* DocuSignSDK.framework in Frameworks */,
 				8EEC086CCC4362454A6E1B2E /* Pods_DocUSignApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -80,9 +70,6 @@
 		E02C0513217252A00058E574 = {
 			isa = PBXGroup;
 			children = (
-				E0A08F8E217266F400D97C73 /* DocuSignSDK.framework */,
-				E0A08F9421726A1300D97C73 /* DocuSignSDK.framework */,
-				E02C053B21725BAD0058E574 /* DocuSignSDK.bundle */,
 				E02C051E217252A00058E574 /* DocUSignApp */,
 				E02C051D217252A00058E574 /* Products */,
 				E02C053621725B290058E574 /* Frameworks */,
@@ -134,7 +121,7 @@
 				E02C0519217252A00058E574 /* Frameworks */,
 				E02C051A217252A00058E574 /* Resources */,
 				E0A08F922172674300D97C73 /* Embed Frameworks */,
-				E0A08F8C21725CD100D97C73 /* ShellScript */,
+				E0A08F8C21725CD100D97C73 /* Run Script */,
 				456FD4C9335D101392C81DF2 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
@@ -184,7 +171,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E02C053C21725BAD0058E574 /* DocuSignSDK.bundle in Resources */,
 				E02C052A217252A20058E574 /* LaunchScreen.storyboard in Resources */,
 				E02C0527217252A20058E574 /* Assets.xcassets in Resources */,
 				E02C0525217252A00058E574 /* Main.storyboard in Resources */,
@@ -204,12 +190,14 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-DocUSignApp/Pods-DocUSignApp-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -238,7 +226,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		E0A08F8C21725CD100D97C73 /* ShellScript */ = {
+		E0A08F8C21725CD100D97C73 /* Run Script */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -247,13 +235,14 @@
 			);
 			inputPaths = (
 			);
+			name = "Run Script";
 			outputFileListPaths = (
 			);
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "bash \"$BUILT_PRODUCTS_DIR/$FRAMEWORKS_FOLDER_PATH/DocuSignSDK.framework/strip-frameworks.sh\"\n";
+			shellScript = "\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 

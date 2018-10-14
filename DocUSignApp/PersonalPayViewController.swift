@@ -8,6 +8,7 @@
 
 import UIKit
 import Alamofire
+import SwiftyJSON
 
 
 
@@ -24,7 +25,8 @@ class PersonalPayViewController: UIViewController {
     @IBAction func nextTapped(_ sender: UIButton) {
         
         let parameters = [
-            "templateId" : "d1fa3c27-27cc-4cdc-af9f-a0956cc0523a"
+            "templateId" : "d1fa3c27-27cc-4cdc-af9f-a0956cc0523a",
+            "signingMode" : "direct"
         ]
         
         let headers = [
@@ -32,10 +34,20 @@ class PersonalPayViewController: UIViewController {
             "Content-Type": "application/json"
         ]
         
-        Alamofire.request("https://demo.docusign.net/restapi/v2/accounts/6811305/powerforms",method: .post, parameters: parameters, headers: headers).responseJSON { response in
+        Alamofire.request("https://demo.docusign.net/restapi/v2/accounts/6811305/powerforms",method: .post, parameters: parameters,encoding: JSONEncoding.default, headers: headers).responseJSON { response in
             if let data = response.data, let utf8Text = String(data: data, encoding: .utf8) {
                 print("Data: \(utf8Text)")
+                
+                if let json = try? JSON(data: response.data!){
+                    if let url = URL(string: json["powerFormUrl"].stringValue),
+                        UIApplication.shared.canOpenURL(url) {
+                        UIApplication.shared.open(url, options: [:])
+                    }
+                    
+                }
+
             }
+    
         }
     }
     
